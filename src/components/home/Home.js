@@ -39,7 +39,7 @@ export const Home = () => {
         <Grid container spacing={2}>
             <Grid item xs={12} sm={8}>
                 <Box component="div" style={{ marginTop: '5px' }} className={classes.scrollbar}>
-                    {posts.length === 0 && <><LoadingFeed /><LoadingFeed/></>}
+                    {posts.length === 0 && <LoadingFeed />}
                     <InfiniteScroll
                         dataLength={posts.length}
                         next={fetchMoreData}

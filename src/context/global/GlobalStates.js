@@ -148,7 +148,7 @@ export const GlobalProvider = ({ children }) => {
     }
 
     useEffect(async () => {
-        getPosts();
+        // getPosts();
         const username = cookies.get('jwt')?.username
         if (username != undefined) {
             const result = await api.findUser(username);
